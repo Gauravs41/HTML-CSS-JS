@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css"href="style.css">
+    <meta charset="utf-8">
+    <script type="text/javascript">
+    function abc(){
+        var java = parseInt(document.getElementById("java").value);
+        var javascript = parseInt(document.getElementById("javascript").value);
+        var asp = parseInt(document.getElementById("asp").value);
+        var html = parseInt(document.getElementById("html").value);
+        var css = parseInt(document.getElementById("css").value);
+         var total = "Total  :  " + parseInt(java+javascript+asp+html+css);
+         var p=(java+javascript+asp+html+css)/5;
+         var percent = "Percentage  :  " +p ;
+         document.getElementById("sum").innerHTML=total;
+         document.getElementById("per").innerHTML=percent;
+         var  fail="Sorry You didnot pass. Try Next Year."
+         var pass="Congretulation Your are successfully passed"
+         if(java<35 || javascript<35 || asp<35 || html<35 || css<35)
+         {
+           document.getElementById("fail").innerHTML=fail;
+         }
+         else {
+            document.getElementById("pass").innerHTML=pass;
+                }
+       }
+
+
+
+
+
+    </script>
+    <title></title>
+  </head>
+  <body>
+
+    <div class="table-title">
+<h3>Data Table</h3>
+</div>
+<table class="table-fill">
+<thead>
+<tr>
+<th class="text-left">Subject</th>
+<th class="text-left">Marks</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+<tr>
+<td class="text-left">JAVA</td>
+<td class="text-left"><input type="number" class="field" id="java" placeholder="Enter Marks" /></td>
+</tr>
+<tr>
+<td class="text-left">javascript</td>
+<td class="text-left"><input type="number" class="field" id="javascript" placeholder="Enter Marks" /></td>
+</tr>
+<tr>
+<td class="text-left">ASP.net</td>
+<td class="text-left"><input type="number" class="field" id="asp" placeholder="Enter Marks" /></td>
+</tr>
+<tr>
+<td class="text-left">HTML</td>
+<td class="text-left"><input type="number" class="field" id="html" placeholder="Enter Marks" /></td>
+</tr>
+<tr>
+<td class="text-left">CSS</td>
+<td class="text-left"><input type="number" class="field" id="css" placeholder="Enter Marks" /></td>
+</tr>
+</tbody>
+</table>
+<button class="button-two" onclick="abc();"><span>Dont Shame</span></button>
+<br>
+<br>
+<div id="fail" style="background-color:red; text-align:center; font-size:20px; color:white;">
+
+
+</div>
+<div id="pass" style="background-color:green; text-align:center; font-size:20px; color:white;">
+
+
+</div>
+<br>
+<br>
+<div id="sum" style="text-align:center; color:white ; font-size:20px;">
+
+</div>
+<br>
+<br>
+
+<div id="per"  style="text-align:center; color:white ; font-size:20px;">
+
+</div>
+
+  </body>
+</html>

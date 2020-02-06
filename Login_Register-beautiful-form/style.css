@@ -1,0 +1,241 @@
+body
+{
+	background-image:url(img/gradient-wallpaper.jpg);
+ background-repeat: no-repeat;
+ background-size:cover;
+}
+.login
+{
+	position: absolute;
+	height: 550PX;
+	width: 430PX;
+	background:linear-gradient(to right, rgba(7, 0, 0,0.2),rgba(76, 0, 1,0.2),rgba(7, 0, 0,0.2));
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	color: rgba(255,255,255,0.7);
+	overflow:hidden;
+	box-shadow:0px 0px 60px black;
+}
+.header
+{
+	height: 60px;
+	background-color: #000;
+	color: rgba(255,255,255,0.8);
+	font-weight:lighter;
+	font-family: arial;
+	font-size:25px;
+	text-align: center;
+    line-height: 60px;
+}
+.footer
+{
+
+	height: 61px;
+	background-color:#000000;
+	padding-bottom: 0;
+}
+.form
+{
+	padding-left: 17%;
+	margin-top:83px;
+
+
+}
+input::placeholder
+{
+	color: rgba(255,255,255,0.7);;
+}
+#user
+{
+
+position: absolute;
+margin: 28px 0px 0 -12px;
+color: rgba(255,255,255,0.9);
+}
+#key
+{
+	position: absolute;
+	margin: 88px 0px 0 -330px;
+	color: rgba(255,255,255,0.9);
+}
+
+a
+{
+
+	margin:20px  0px 0px 130px;
+	color: rgba(255,255,255,0.7);
+	text-decoration: none;
+	font-family: arial;
+	text-transform: lowercase;
+	font-size: 15px;
+	font-weight:lighter;
+}
+input
+{
+
+	color: rgba(255,255,255,0.7);
+  padding-left: 30px;
+	height: 30px;
+	width: 83%;
+	background: transparent;
+	border: none;
+  border-bottom: 2px solid rgba(94, 232, 48,0.7);
+  margin: 20px 0px 5px -15px;
+}
+input:hover
+{
+
+border-bottom: 2px solid rgba(94, 232, 48,1);
+}
+#submitbtn
+{
+	width: 50%;
+	height: 40px;
+	background-color: rgba(94, 232, 48,0.8);
+	border: none;
+	margin: 45px 0px 0 105px;
+	color: rgba(255,255,255,0.8);
+	font-size: 22px;
+	border-radius:5px;
+	box-shadow:0px 2px 2px black;
+}
+#submitbtn:hover
+{
+	background-color: rgba(94, 232, 48,1);
+	color: rgba(255,255,255,1);
+}
+.p-container{
+  margin-top: 1.2em;
+}
+.p-container  .checkbox input {
+  position: absolute;
+  left: -9999px;
+}
+
+.p-container.checkbox {
+  float: left;
+  margin-right: 50px;
+}
+.p-container .checkbox {
+  padding-left: 85px;
+ font-size: 0.95em;
+line-height: 14px;
+color: #fff;
+cursor: pointer;
+}
+.p-container  .checkbox {
+  position: relative;
+  display: block;
+}
+
+label.checkbox {
+float: left;
+margin-top: 3px 0 0 5px;
+}
+.p-container  .checkbox i {
+  position: absolute;
+  top: -2px;
+  left: 55px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  outline: none;
+  border: none;
+  background: #eee;
+  border: 1px solid #eee;
+  border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+}
+.image
+{
+	position:absolute;
+	background-image:url(img/bbl.png);
+	background-repeat:no-repeat;
+	background-size:center;
+	top:85px;
+	left:125px;
+
+}
+hr{
+	width:150px;
+	align:center;
+	opacity:0.6;
+	margin-top:20px;
+}
+#fb
+{
+	height:40px;
+	width:130px;
+	background:url("img/fb.png")no-repeat 8px 9px rgba(59, 95, 164,0.7);
+	padding: 0.7em 3.3em;
+    font-size:0.90em;
+	border:none;
+	color: rgba(255,255,255,0.7);
+	border-radius:5px;
+	margin:20px 20px;
+	box-shadow:0px 2px 2px black;
+}
+#fb:hover
+{
+	background:url("img/fb.png")no-repeat 8px 9px rgba(59, 95, 164,1);
+	color: rgba(255,255,255,1);
+}
+
+#twitter
+{
+	height:40px;
+	width:130px;
+	background:url("img/twt.png")no-repeat 8px 7px rgba(17, 170, 222,0.7);
+	padding: 0.7em 3.3em;
+  font-size:0.90em;
+	border:none;
+	color: rgba(255,255,255,0.7);
+	border-radius:5px;
+	margin:20px 50px;
+	float:left;
+	box-shadow:0px 2px 2px black;
+}
+#twitter:hover
+{
+	background:url("img/twt.png")no-repeat 8px 7px rgba(17, 170, 222,1);
+	color: rgba(255,255,255,1);
+}
+#signup
+{
+	height:30px;
+	width:90px;
+	background:8px 7px #5ee830;
+	padding: -0.3em 3.3em;
+  font-size:0.90em;
+	border:none;
+	color:white;
+	border-radius:5px;
+	margin:12px 170px;
+
+	box-shadow:0px 2px 2px black;
+}
+  .login:before
+    {
+      content: '';
+      position: absolute;
+      top: -200px;
+      left: 230px;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.1);
+      transform: skewX(45deg);
+
+    }
+#sign
+{
+
+line-height: 61px;
+margin-left: 140px;
+font-size: 13px;
+font-weight:lighter;
+font-family: arial;
+color: rgba(255,255,255,0.7);
+}

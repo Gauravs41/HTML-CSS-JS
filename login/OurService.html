@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vasundhara</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-image:url('service.jpg');">
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Vasundhara Vision</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown" class="active">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Service<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Android</a></li>
+              <li><a href="#">iOS</a></li>
+            </ul>
+          </li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li id="signupdc"><a href="#" ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li  id="login"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- signup -->
+  <div class="modal fade" id="mysignup" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:15px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Sign Up</h4>
+        </div>
+        <div class="modal-body" style="padding:25px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" class="form-control" id="usrname" placeholder="User Name">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-iphone"></span> Mobile</label>
+              <input type="text" class="form-control" id="psw" placeholder="Mobile Number">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-envelope"></span> Email</label>
+              <input type="text" class="form-control" id="psw" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Conform Password</label>
+              <input type="text" class="form-control" id="psw" placeholder="Re-Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Already member?   <button type="button" class="btn btn-default btn-lg" id="logininner">Login</button></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $("#signup").click(function(){
+        $("#mysignup").modal();
+        $("#mylogin").modal('hide');
+    });
+    $("#logininner").click(function(){
+      $("#mylogin").modal();
+      $("#mysignup").modal('hide');
+    });
+    $("#signupdc").click(function(){
+        $("#mysignup").modal();
+    });
+});
+</script>
+<!--signup-->
+<!--login-->
+<div class="modal fade" id="mylogin" role="dialog">
+  <div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+  <div class="modal-header" style="padding:15px 50px;">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+  </div>
+  <div class="modal-body" style="padding:40px 50px;">
+    <form role="form">
+      <div class="form-group">
+        <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+        <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+        <input type="text" class="form-control" id="psw" placeholder="Enter password">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" value="" checked>Remember me</label>
+      </div>
+        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+    <p>Not a member?   <button type="button" class="btn btn-default btn-lg" id="signup">signup</button></p>
+    <p>Forgot <a href="#" id="password">Password?</a></p>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<script>
+$(document).ready(function(){
+$("#login").click(function(){
+  $("#mylogin").modal();
+
+});
+});
+</script>
+<!--login-->
+<!--forgot password-->
+<!--login-->
+<div class="modal fade" id="mypassword" role="dialog">
+  <div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+  <div class="modal-header" style="padding:15px 50px;">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4><span class="glyphicon glyphicon-lock"></span> Reset Password</h4>
+  </div>
+  <div class="modal-body" style="padding:40px 50px;">
+    <form role="form">
+
+      <div class="form-group">
+        <label for="psw"><span class="glyphicon glyphicon-envelope"></span> Email</label>
+        <input type="text" class="form-control" id="psw" placeholder="Email Address">
+      </div>
+
+        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Reset Passwor</button>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+
+
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<script>
+$(document).ready(function(){
+$("#password").click(function(){
+  $("#mypassword").modal();
+  $("#mylogin").modal('hide');
+
+
+});
+});
+</script>
+<!--login-->
+<!--forgot password-->
+
+
+
+
+  </body>
+  </html>

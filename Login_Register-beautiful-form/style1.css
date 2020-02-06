@@ -1,0 +1,126 @@
+body
+{
+	background-image:url(img/gradient-wallpaper.jpg);
+ background-repeat: no-repeat;
+ background-size:cover;
+}
+.login
+{
+	position: absolute;
+	height: 550PX;
+	width: 430PX;
+	background:linear-gradient(to right, rgba(7, 0, 0,0.2),rgba(76, 0, 1,0.2),rgba(7, 0, 0,0.2));
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	color: rgba(255,255,255,0.7);
+	overflow:hidden;
+	box-shadow:0px 0px 60px black;
+}
+.form
+{
+	padding-left: 17%;
+	margin-top:83px;
+}
+.header
+{
+	height: 60px;
+	background-color: #000;
+	color: rgba(255,255,255,0.8);
+	font-weight:lighter;
+	font-family: arial;
+	font-size:25px;
+	text-align: center;
+  line-height: 60px;
+}
+.footer
+{
+
+	height: 61px;
+	background-color:#000000;
+	padding-bottom: 0px;
+}
+.image
+{
+	position:absolute;
+	background-image:url(img/bbl.png);
+	background-repeat:no-repeat;
+	background-size:center;
+	top:85px;
+	left:125px;
+
+}
+input::placeholder
+{
+	color: rgba(255,255,255,0.7);
+}
+textarea::placeholder
+{
+	color: rgba(255,255,255,0.7);
+}
+input
+{
+
+	color: rgba(255,255,255,0.7);
+  padding-left: 10px;
+	height: 30px;
+	width: 83%;
+	background: transparent;
+	border: none;
+  border-bottom: 2px solid rgba(94, 232, 48,0.7);
+  margin: 20px 0px 5px -15px;
+}
+textarea
+{
+
+	color: rgba(255,255,255,0.7);
+  padding-left: 10px;
+	height: 50px;
+	width: 83%;
+	background: transparent;
+	border: none;
+  border-bottom: 2px solid rgba(94, 232, 48,0.7);
+  margin: 20px 0px 5px -15px;
+}
+input:hover
+{
+
+border-bottom: 2px solid rgba(94, 232, 48,1);
+}
+textarea:hover
+{
+
+border-bottom: 2px solid rgba(94, 232, 48,1);
+}
+#submitbtn
+{
+	width: 50%;
+	height: 40px;
+	background-color: rgba(94, 232, 48,0.8);
+	border: none;
+	margin: 25px 0px 20px 50px;
+	color: rgba(255,255,255,0.8);
+	font-size: 22px;
+	border-radius:5px;
+	box-shadow:0px 2px 2px black;
+}
+#submitbtn:hover
+{
+	background-color: rgba(94, 232, 48,1);
+	color: rgba(255,255,255,1);
+}
+#sign
+{
+
+line-height: 61px;
+margin-left: 140px;
+font-size: 13px;
+font-weight:lighter;
+font-family: arial;
+color: rgba(255,255,255,0.7);
+}
+span
+{
+	margin-left: -50px;
+
+}

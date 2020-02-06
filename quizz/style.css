@@ -1,0 +1,61 @@
+body
+{
+  background:rgba(243, 156, 18,1.0);
+  color: #fff;
+  font-weight: 'arial', serif,lighter;
+  font-size: 14px;
+}
+#container
+{
+  width: 60%;
+  background: rgba(44, 62, 80,1.0);
+  margin: 20px auto;
+  overflow: auto;
+  padding: 65px;
+  border-radius: 20px;
+}
+header
+{
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 2px dashed #fff;
+}
+ header h1
+ {
+   margin: 0;
+   padding: 0;
+ }
+ section
+ {
+   min-height: 400px;
+ }
+button
+ {
+   background:rgba(46, 204, 113,1.0);
+   border: 0;
+   font-size: 20px;
+   padding: 10px 20px;
+   cursor: pointer;
+   border-radius: 5px;
+   color: #fff;
+   margin-left: 45%;
+ }
+ button:hover
+ {
+   background: rgba(26, 188, 156,1.0);
+ }
+ footer
+ {
+   text-align: center;
+ }
+ #results h3
+ {
+   background: #96C346;
+   padding: 10px;
+   margin: 10px 0;
+ }
+ #results span
+ {
+   color: #000;
+   font-weight: bold;
+ }

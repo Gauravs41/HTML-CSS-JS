@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style1.css">
+    <title>Form</title>
+    <script type="text/javascript">
+    var a=0,b=0,c=0;
+      function check(x)
+      {
+        var exp=/^[a-zA-Z]{3,}$/;
+        var v =exp.exec(x.value);
+        if(v)
+        {  var y = x.id+1; a=1;
+          document.getElementById(y).innerHTML="Correct".fontcolor("green");  }
+        else { var y = x.id+1; a=0;
+          document.getElementById(y).innerHTML="Invalid".fontcolor("red");}
+      }
+      function check1(x)
+      {
+        var l=x.value.toLowerCase();
+        var exp=/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9]+(\.[a-z0-9]+)*(\.[a-z]{2,})$/;
+        var v =exp.exec(l);
+        if(v)
+        {  var y = x.id+1;b=1;
+          document.getElementById(y).innerHTML="Valid".fontcolor("green");  }
+        else { var y = x.id+1; b=0;
+          document.getElementById(y).innerHTML="Invalid".fontcolor("red");}
+      }
+      function check2(x)
+      {
+        var exp=/^[+0-9]{13}$/;
+        var v =exp.exec(x.value);
+        if(v)
+        {  var y = x.id+1;c=1;
+          document.getElementById(y).innerHTML="Valid".fontcolor("green");  }
+        else { var y = x.id+1; c=0;
+          document.getElementById(y).innerHTML="Invalid".fontcolor("red");}
+      }
+      function check3()
+      {
+        if(a==0 || b==0 || c==0)
+        {
+          window.alert("Please Enter Valid Information");
+        }
+
+        }
+        function mailsend()
+        {
+          $("#loader").show();
+          jQuery.ajax({
+            url:"mail.php",
+            data:{name:$('input#nam').val(),email:$('input#mail').val(),PhoneNumber:$('input#phone').val(),Message:$('textarea#msg').val()},
+            type:"POST",
+            success:function(data){
+              $('#name,#email,#phone,#msg').val();
+              $("#resmsg").html(data);
+              $("#loader").hide();
+            },
+          });
+        }
+    </script>
+  </head>
+  <body>
+    <div id="loader">
+
+    </div>
+    <div id="resmsg">
+
+    </div>
+    <div class="login">
+      <div class="header">
+      Client Login
+      </div>
+      <div class="image">
+      <p style="font-size:24px;font-weight:bold; color:white; text-align:center; word-spacing:72px;">1 2 3</p>
+      </div>
+
+
+  									<div class="form">
+  								  <input type="text" name="Name" placeholder="Name" id="nam"oninput="check(this);"required=""><span id="nam1"></span>
+  									<input type="email" name="Email" placeholder="Email" id="mail" oninput="check1(this);"required=""><span id="mail1"></span>
+  									<input type="text" name="PhoneNumber" placeholder="Phone Number"  oninput="check2(this);"id="phone" required=""><span id="phone1"></span>
+  									<textarea name="Message" placeholder="Message..."  id="msg" required=""></textarea>
+                    <button id="submitbtn" type="submit" name="button" onclick="check3();" onclick="mailsend();">Submit</button>
+                  </div>
+          <div class="footer">
+          <label id="sign" >You don't have Account?</label>
+          </div>
+      </div>
+
+  </body>
+</html>
